@@ -15,8 +15,8 @@ public:
     bool is_connected(int start, int finish);
     int incoming_power(int vertex);
     int* topological_sort();
-    int* find_paths(int start, int *sorted);
-    int* find_paths(int start);
+    int* find_paths_acyclic(int start, int *sorted);
+    int* find_paths_dijkstra(int start);
 };
 
 

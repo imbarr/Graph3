@@ -1,3 +1,0 @@
-/home/mikhail/CLionProjects/Graph3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mikhail/CLionProjects/Graph3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mikhail/CLionProjects/Graph3/cmake-build-debug/CMakeFiles/Graph3.dir

@@ -44,12 +44,14 @@ int* matrix::topological_sort(){
                 if(--powers[i] == 0)
                     s.push(i);
     }
+
+    delete(powers);
     if(ptr != size)
         return nullptr;
     return result;
 }
 
-int* matrix::find_paths(int start, int* sorted){
+int* matrix::find_paths_acyclic(int start, int *sorted){
     auto prev = new int[size];
     auto len = new int[size];
     int vertex, i = 0;
@@ -75,10 +77,12 @@ int* matrix::find_paths(int start, int* sorted){
             }
         }
     }
+
+    delete(len);
     return prev;
 }
 
-int* matrix::find_paths(int start) {
+int* matrix::find_paths_dijkstra(int start) {
     auto prev = new int[size];
     auto len = new int[size];
     for(int i=0; i<size; i++){
@@ -102,5 +106,7 @@ int* matrix::find_paths(int start) {
                 }
             }
     }
+
+    delete(len);
     return prev;
 }
