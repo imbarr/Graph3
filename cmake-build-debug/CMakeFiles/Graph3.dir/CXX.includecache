@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mikhail/CLionProjects/Graph3/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+ctime
+-
+matrix.h
+/home/mikhail/CLionProjects/Graph3/matrix.h
+
+/home/mikhail/CLionProjects/Graph3/matrix.cpp
+stack
+-
+matrix.h
+/home/mikhail/CLionProjects/Graph3/matrix.h
+
+/home/mikhail/CLionProjects/Graph3/matrix.h
+string
+-
+fstream
+-
+
